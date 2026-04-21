@@ -44,13 +44,13 @@ CREATE TABLE pedidos (
 
 -- 5. Tabla Detalle de Pedido (Relación N a N)
 CREATE TABLE detalle_pedido (
+    id_detalle int auto_increment primary key,
     id_pedido INT,
     id_producto INT,
     cantidad INT NOT NULL,
     subtotal DECIMAL(10,2),
     FOREIGN KEY (id_pedido) REFERENCES pedidos(id_pedido),
-    FOREIGN KEY (id_producto) REFERENCES productos(id_producto),
-    primary key (id_producto,id_pedido)
+    FOREIGN KEY (id_producto) REFERENCES productos(id_producto)
 );
 describe detalle_pedido; 
 -- 6. Tabla de Auditoría
