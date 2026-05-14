@@ -1,4 +1,5 @@
-# proyecto-mysql2
+# Gaseosas del valle
+
 
 gaseosas del valle s.a. - sistema de gestión de inventario y ventas
 este proyecto consiste en el diseño e implementación de una base de datos relacional para la empresa gaseosas del valle s.a., automatizando el control de stock, el cálculo de impuestos y la generación de reportes estratégicos.
